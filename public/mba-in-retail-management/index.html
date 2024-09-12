@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./output.css">
+    <!-- youtube player -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.5.0/lite-youtube.js"></script>
+</head>
+
+<body class="w-screen h-screen flex">
+
+    <div class="flex w-full flex-col h-screen">
+        <header class="flex w-full shadow-md">
+            <div class="flex flex-col w-full max-w-7xl divide-y mx-auto">
+                <nav class="flex flex-col w-full px-5 py-3">
+                    <div class="flex h-10 w-full justify-between">
+                        <div class="flex w-full h-full justify-between">
+                            <div class="flex h-full w-fit aspect-auto flex-grow-0 items-center">
+                                <img class="h-10 w-fit object-contain flex" src="../assets/logo/b-school-logo.webp"
+                                    alt="MBA Logo">
+                            </div>
+                            <ul class="hidden lg:ml-6 lg:flex lg:flex-grow lg:space-x-8 items-center justify-center">
+
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/aboutus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Admission</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/blog"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Placement</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Program</a>
+                                </li>
+                                <li class="relative flex items-center justify-center">
+                                    <button id="dropdown-button" type="button"
+                                        class="inline-flex items-center gap-x-1 text-sm  text-gray-900"
+                                        aria-expanded="false">
+                                        <span class="h-fit">Specialization</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="dropdown-menu"
+                                        class="hidden absolute -left-10 top-[34px] z-10 w-screen max-w-min ">
+                                        <ul
+                                            class="w-80 shrink rounded-sm bg-white text-sm text-gray-900 shadow-lg ring-1 ring-gray-300">
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-fashion-design/"
+                                                    class="block p-2">
+                                                    Financial Services
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-interior-design/"
+                                                    class="block p-2">
+                                                    Fintech
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-visual-communication/"
+                                                    class="block p-2">
+                                                    Digital Marketing and Media Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-animation-and-vfx/"
+                                                    class="block p-2">
+                                                    Business Analytics
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Retail Management and E-Commerce
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Marketing Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    International Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Human Resource Management Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Operation & Supply Chain Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Finance
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Incubator</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Campus life</a>
+                                </li>
+                            </ul>
+                            <div class="hidden lg:flex flex-grow-0 gap-3">
+                                <button
+                                    class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
+                                    Enquire Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="-mr-2 flex items-center lg:hidden">
+                            <button id="menu-toggle" type="button"
+                                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:hidden" id="mobile-menu">
+                        <ul class="space-y-1 pb-3 pt-2">
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Admission
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Placement
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Program
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <details class="w-full text-gray-900">
+                                    <summary class="flex text-sm px-1 py-1  w-full">
+                                        <span class="h-fit">Program</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </summary>
+                                    <div class="flex w-full ">
+                                        <ul class="w-full text-sm ">
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-fashion-design/"
+                                                    class="block p-2">
+                                                    Financial Services
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-interior-design/"
+                                                    class="block p-2">
+                                                    Fintech
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-visual-communication/"
+                                                    class="block p-2">
+                                                    Digital Marketing and Media Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-animation-and-vfx/"
+                                                    class="block p-2">
+                                                    Business Analytics
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Retail Management and E-Commerce
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Marketing Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    International Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Human Resource Management Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Operation & Supply Chain Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Finance
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Incubator
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/blog"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Campus Life
+                                </a>
+                            </li>
+                            <li class="flex w-full py-2">
+                                <a href="https://www.itm.edu/blog"
+                                    class="inline-flex items-center justify-center py-2.5 text-sm bg-brand text-white rounded-md w-full">
+                                    Enquire Now
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="flex w-full flex-col h-[calc(100%-50px)] overflow-y-auto ">
+
+            <section class="flex h-full w-full">
+                <div class="flex relative w-full h-screen max-h-[calc(100vh-50px)]">
+                    <video autoplay muted loop playsinline class="flex relative object-cover h-full md:h-full w-full">
+                        <source src="https://media.itm.ac.in/new_testing_final_a9a1cdc9d0.mp4" type="video/mp4">
+                    </video>
+                    <div class="flex w-full h-full absolute z-10 inset-0 top-0">
+                        <div class="flex flex-col relative w-full h-full items-center font-bold uppercase"
+                            aria-live="polite">
+                            <div class="w-full rounded overflow-x-auto flex snap-x slider-parent h-full">
+                                <!-- Slide 1 -->
+                                <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0"
+                                    id="slide-1" aria-label="Slide 1: Learn through experience">
+                                    <div
+                                        class="flex flex-col w-full max-w-xs gap-4 md:max-w-7xl items-center justify-center">
+                                        <h1
+                                            class="flex w-fit text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-extrabold text-center text-[#FFBE41] bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            ITM Business School: learn through experience
+                                        </h1>
+                                        <p
+                                            class="flex w-full max-w-3xl mx-auto text-sm md:text-base text-center text-white bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            Get ready to achieve your career goals with ITM Business School, where
+                                            learning means thinking and doing—both in the classroom and in the real
+                                            world.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0"
+                                    id="slide-2" aria-label="Slide 2: Programs Offered">
+                                    <div
+                                        class="flex flex-col w-full max-w-xs gap-4 md:max-w-7xl items-center justify-center">
+                                        <h1
+                                            class="flex w-fit text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-extrabold text-center text-[#FFBE41] bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            Programs Offered
+                                        </h1>
+                                        <span
+                                            class="flex w-fit mx-auto text-base md:text-lg text-center text-white bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            MBA | BBA
+                                        </span>
+                                        <div class="flex w-full items-center justify-center">
+                                            <button
+                                                class="text-white flex w-fit gap-2 backdrop-blur-sm bg-black bg-opacity-20 rounded-md py-2 px-4">
+                                                <span>Know More</span>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="size-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="snap-start w-full h-full flex items-center justify-center flex-shrink-0"
+                                    id="slide-3" aria-label="Slide 3: Admissions Opening Soon">
+                                    <div
+                                        class="flex flex-col w-full max-w-xs gap-4 md:max-w-7xl items-center justify-center">
+                                        <h1
+                                            class="flex w-fit text-2xl md:text-3xl lg:text-4xl xl:text-7xl font-extrabold text-center text-[#FFBE41] bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            Admissions Opening soon
+                                        </h1>
+                                        <span
+                                            class="flex w-fit mx-auto text-base md:text-lg text-center text-white bg-black bg-opacity-20 rounded-md border border-[#ffbd4180] backdrop-blur-sm py-1 px-2">
+                                            For MBA 2025-27 & BBA 2025-28
+                                        </span>
+                                        <div class="flex w-full items-center justify-center">
+                                            <button
+                                                class="text-white flex w-fit gap-2 backdrop-blur-sm bg-black bg-opacity-20 rounded-md py-2 px-4">
+                                                <span>Register your Interest</span>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                        class="size-6">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider controls -->
+                            <div class="flex w-full h-full justify-between absolute z-10">
+                                <a class="slider-button back  p-2 flex w-fit h-fit my-auto" href="#slide-1"
+                                    aria-controls="slide-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 19.5 8.25 12l7.5-7.5" />
+                                    </svg>
+                                </a>
+                                <a class="slider-button next  p-2 flex w-fit h-fit my-auto" href="#slide-2"
+                                    aria-controls="slide-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex w-full">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 w-full gap-4 flex-col px-4 py-4 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex h-full w-full">
+                        <div class="flex h-full relative w-full">
+                            <img src="assets/banner-img/standing-background.png" alt="" class="object-contain">
+                            <div class="flex absolute w-full h-full items-center justify-center  my-auto mx-auto ">
+                                <div class="grid grid-cols-2 max-w-sm md:max-w-lg mx-auto gap-4 w-full">
+                                    <div class="flex h-28 items-end justify-start w-full">
+                                        <div
+                                            class="flex w-fit p-2 items-start h-fit rounded-md flex-col bg-[#feeaca] gap-1">
+                                            <span class="text-sm font-bold text-orange-600">A+ Grade</span>
+                                            <span class="text-xs flex whitespace-nowrap">in the OBE Rankings 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start justify-end w-full">
+                                        <div
+                                            class="flex w-fit p-2 items-start h-fit rounded-md flex-col bg-[#feeaca] gap-1">
+                                            <span class="text-sm font-bold text-orange-600">A+ Grade</span>
+                                            <span class="text-xs flex whitespace-nowrap">in the OBE Rankings 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex h-28 items-end justify-center w-full">
+                                        <div
+                                            class="flex w-fit p-2 items-start h-fit rounded-md flex-col bg-[#feeaca] gap-1">
+                                            <span class="text-sm font-bold text-orange-600">A+ Grade</span>
+                                            <span class="text-xs flex whitespace-nowrap">in the OBE Rankings 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start justify-start w-full">
+                                        <div
+                                            class="flex w-fit p-2 items-start h-fit rounded-md flex-col bg-[#feeaca] gap-1">
+                                            <span class="text-sm font-bold text-orange-600">A+ Grade</span>
+                                            <span class="text-xs flex whitespace-nowrap">in the OBE Rankings 2023</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full">
+                        <div class="flex flex-col gap-4 w-full">
+                            <h2 class="font-Bebas-Neue text-3xl md:text-4xl lg:text-5xl font-bold">ITM Business School
+                            </h2>
+                            <div class="flex flex-col gap-2 text-sm md:text-base w-full">
+                                <p class="font-semibold">ITM Business School is a leading Business School based out of
+                                    Kharghar, Navi
+                                    Mumbai,
+                                    India. We are known for our future-focused business education, strong industry
+                                    connect,
+                                    and rigorous student training.
+                                </p>
+                                <p>
+                                    Ever since we opened our doors in 1991, ITM Business School has been at the
+                                    forefront of management education, offering an AICTE-approved PGDM program for over
+                                    three decades. Renowned as "The Premier Institution for Academic Excellence," we are
+                                    proud to be recognized as a Diamond Band - A+ Grade in the OBE Rankings 2023. As of
+                                    the academic year 2023, we further expanded our educational reach with the launch of
+                                    ITM Skills University, a UGC-approved private state skills university. In 2024, our
+                                    popular ITM PGDM iConnect transitioned into an MBA iConnect program under ITM Skills
+                                    University, reflecting our commitment to innovation and industry alignment. In 2024,
+                                    we also introduced the BBA iConnect program.
+                                </p>
+                                <p>Nestled in Kharghar, Navi Mumbai, a thriving "Smart City" and hub of global financial
+                                    activities, our technologically advanced and wi-fi enabled, green campus provides an
+                                    ideal backdrop for academic and professional growth. We recently updated the campus
+                                    infrastructure and have brand-new interactive air conditioned classrooms, video
+                                    conferencing facilities, auditorium and specialized labs. Our campus has plenty of
+                                    green open spaces, an amphitheater, etc. We provide our students access to the
+                                    latest softwares and digital libraries. We also offer hostel facilities so students
+                                    can benefit from a vibrant community. These facilities underscore our commitment to
+                                    delivering both curricular and extracurricular learning experiences essential for
+                                    the holistic development of our students.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col w-full bg-[#feeaf3]">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex w-full md:justify-center">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">We’re ranked by the
+                            best
+                            in the business</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex w-full">
+                            <div class="flex flex-col gap-4">
+                                <p class="text-sm md:text-base">
+                                    We are proud to be recognized and ranked among the best business schools in the
+                                    country by some of the most prestigious independent ranking and accreditation
+                                    bodies. At ITM Business School, our high rankings are driven by a future-focused
+                                    curriculum developed in collaboration with industry leaders, a strong and supportive
+                                    alumni network, and deep industry partnerships that provide students with real-world
+                                    experience.
+                                </p>
+                                <p class="text-sm md:text-base">
+                                    Our commitment to academic excellence, coupled with our emphasis on hands-on
+                                    learning, has earned our students a reputation for possessing the right attitude and
+                                    aptitude—qualities that keep recruiters returning to us year after year.
+                                    Additionally, our global perspective, cutting-edge facilities, and dedicated career
+                                    services further contribute to our standing as a leader in business education.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex w-full">
+                            <div class="flex w-full relative aspect-video rounded-md">
+                                <img src="assets/banner-img/ranking1.webp" alt=""
+                                    class="flex object-cover w-full h-full rounded-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex w-full md:justify-center">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">Some of our recent
+                            rankings</h2>
+                    </div>
+                    <div class="flex w-full overflow-x-scroll pb-3">
+                        <div class="grid grid-flow-col gap-4 justify-start lg:w-full lg:justify-center w-fit">
+                            <div class="flex flex-col gap-4 bg-white p-6 rounded-md  w-60">
+                                <span class="font-bold text-xl">AAA+</span>
+                                <p class="text-sm md:text-base">AAA+ in Top Private B-Schools in India
+                                    Category by Career 360
+                                    Ranking 2023</p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-white p-6 rounded-md  w-60">
+                                <span class="font-bold text-xl">Diamond Band</span>
+                                <p class="text-sm md:text-base">Diamond Band with A+ Grade by OBE Ranking Survey 2023.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-white p-6 rounded-md  w-60">
+                                <span class="font-bold text-xl">8th</span>
+                                <p class="text-sm md:text-base">Ranked 8th in Mumbai, 22nd in West Zone, 38th among
+                                    Private B-Schools in India by Fortune B-Schools Ranking 2023..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full items-center justify-center">
+                        <button class="text-white flex w-fit gap-2 bg-[#a91d54] rounded-md py-2 px-4">
+                            <span>Know More</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="flex flex-col h-auto w-full ">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex w-full ">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">ITM Business School
+                            Advantage:</h2>
+                    </div>
+                    <div class="flex w-full overflow-x-scroll pb-3">
+                        <div class="flex gap-4 justify-start lg:justify-center md:grid w-fit md:w-full md:grid-cols-2">
+                            <div class="flex flex-col gap-4 bg-[#feeaf3] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">𝒊Connect Difference</span>
+                                <p class="text-sm md:text-base">𝒊Connect or Industry Connect is at the heart of the
+                                    programs at the ITM Business School. It is your bridge to industry. You will get
+                                    plenty of opportunities to connect, learn, work and network with senior industry
+                                    professionals. You will be guided by industry experts every step of the way -
+                                    whether it's the 5-month long internship, the NGO project, live cases that you need
+                                    to work on, or the capstone project. The campus is always buzzing with industry
+                                    experts, senior alumni, and business leaders, providing you with an opportunity to
+                                    network, to seek guidance and support.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-[#edf7ff] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">Professional Certifications</span>
+                                <p class="text-sm md:text-base">At ITM Business School, we believe in equipping our
+                                    students with more than just a degree. Through our specialized professional
+                                    certifications in high-demand fields, we ensure our graduates are industry-ready
+                                    from day one. These advanced courses complement your degree, providing practical
+                                    skills and specialized knowledge that employers seek. Be it any course, our
+                                    professional certifications prepare you to excel in your chosen field. Gain a
+                                    competitive edge and hit the ground running with the confidence that comes from both
+                                    academic achievement and practical expertise.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-[#edf7ff] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">Global Collaborations</span>
+                                <p class="text-sm md:text-base">We offer excellent opportunities for global exposure
+                                    through academic collaborations with prestigious universities in UAE, Malaysia,
+                                    Singapore, and Europe. This initiative allows students to broaden their horizons,
+                                    experience diverse cultures, and gain international perspectives while pursuing
+                                    their academic goals. Through these collaborations, students can participate in
+                                    exchange programs, study tours, and joint research projects, enhancing their
+                                    academic journey and preparing them to thrive in a globalized business environment.
+                                    Depending on the program you opt for, global immersion programs are either mandatory
+                                    or optional part of your degree program.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-[#feeaf3] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">Placements</span>
+                                <p class="text-sm md:text-base">With over three decades of excellence, ITM Business
+                                    School blends a rich alumni network and deep industry ties to offer unparalleled
+                                    placement prospects. Each year, more than 950 companies actively seek talent from
+                                    our campus. We attribute this to two things - a future focused curriculum, long
+                                    internships and real-work experience that the students gain, and the professional
+                                    certifications that the students earn along with their degree.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-[#feeaf3] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">Alumni</span>
+                                <p class="text-sm md:text-base">Our alumni community at ITM Business School is a vibrant
+                                    network of accomplished professionals spread across diverse industries worldwide.
+                                    They are a testament to our commitment to excellence and the success stories that
+                                    our programs foster. Through ongoing engagement and support, our alumni offer
+                                    mentorship, career guidance, and valuable industry connections to current students.
+                                    Their achievements inspire and motivate, reflecting the transformative impact of an
+                                    ITM education.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-4 bg-[#edf7ff] p-6 rounded-md w-80 md:w-full">
+                                <span class="font-bold text-xl text-[#a91d54]">Campus Infrastructure</span>
+                                <p class="text-sm md:text-base">ITM Business School is housed within the flagship
+                                    Kharghar, Navi Mumbai campus. The campus is interesting because of the opposites it
+                                    offers - it is technologically advanced and yet offers green open spaces, it offers
+                                    some of our best faculty and also the maximum number of industry professionals
+                                    visiting us, it is located in the financial district of the country and yet just far
+                                    enough away from the chaos of the city. A home away from home, the campus is abuzz
+                                    with a promise of career as well as community.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="flex flex-col h-auto w-full bg-[#ffecdb]">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex flex-col gap-2 items-center justify-center w-full ">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">Get a degree that
+                            matters</h2>
+                        <p class="text-sm md:text-base max-w-6xl text-left md:text-center mx-auto">
+                            ITM offers a diverse range of programs designed to meet our students' academic and
+                            professional aspirations. From undergraduate courses that delve deep into specialized
+                            fields, fostering advanced knowledge and expertise, to post graduate courses that equip
+                            future leaders with the strategic skills and global perspective necessary for success in
+                            today's competitive business environment. Our programs are crafted to blend rigorous
+                            academic curriculum with practical application, preparing graduates to excel in their chosen
+                            careers and make meaningful contributions to their industries and communities.
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-4 w-full">
+                        <div class="flex gap-4 items-center justify-center w-full">
+                            <button onclick="openPage('MBA', this, '#a91d54')" id="defaultOpen"
+                                class="tablink cursor-pointer w-fit px-5 bg-white hover:bg-[#a91d54] hover:text-white py-2 rounded-md">
+                                MBA
+                            </button>
+                            <button onclick="openPage('BBA', this, '#a91d54')"
+                                class="tablink cursor-pointer w-fit px-5 bg-white hover:bg-[#a91d54] hover:text-white py-2 rounded-md">
+                                BBA
+                            </button>
+                        </div>
+                        <div class="flex w-full ">
+                            <div id="MBA" class="none tabcontent p-5 border rounded-lg  w-full">
+                                <div class="flex flex-col gap-4 w-full">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+                                        <div class="flex w-full">
+                                            <div class="flex w-full md:h-80 relative aspect-square">
+                                                <img src="assets/banner-img/young-man.webp" alt=""
+                                                    class="flex h-full w-full object-contain object-bottom">
+                                            </div>
+                                        </div>
+                                        <div class="flex w-full flex-col gap-2">
+                                            <span class="font-bold text-base md:text-lg text-[#a91d54]">MBA</span>
+                                            <p class="text-sm md:text-base">
+                                                The MBA 𝒊Connect program is a 2-year, full-time exploration of
+                                                self-discovery, based in Kharghar, Navi Mumbai. Our intensive and
+                                                experiential learning will increase your knowledge, skills and
+                                                performance
+                                                and your ability to think innovatively. You'll graduate equipped to put
+                                                your
+                                                education into practice and rise to the challenges of the ever changing
+                                                global business environment.</p>
+                                            <p class="text-sm md:text-base">
+                                                This program is ideal if you’re keen to study for an MBA at a leading
+                                                business school with a recognised business degree and you’re looking for
+                                                a
+                                                unique blend of academic learning and practical application.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full bg-white gap-6 p-4 rounded-lg">
+                                        <div class="flex flex-col gap-4 w-full items-center justify-center">
+                                            <span
+                                                class="text-lg md:text-xl lg:text-2xl text-[#a91d54] font-bold uppercase">An
+                                                experiential
+                                                learning
+                                                emphasis</span>
+                                            <p class="text-sm md:text-base text-center">
+                                                During the program, you’ll learn not just from senior faculty members
+                                                but also from industry. We’re not only about academic learning at ITM
+                                                Business School. One of the reasons why students choose to study with us
+                                                is that our learning is hands-on: with us, you’ll get real-life
+                                                experience and the chance to integrate theory with practice.
+                                            </p>
+                                            <span class="w-32 h-1 my-6 bg-[#a91d54]"></span>
+                                            <p class="text-sm md:text-base text-center">
+                                                You’ll have numerous opportunities to apply what you learn in
+                                                real-world, practical situations. A 5-month long internship, a 2-week
+                                                project within the social sector, a capstone project and working on live
+                                                projects and case studies are all designed to ensure you learn by doing.
+                                            </p>
+                                            <span class="w-32 h-1 my-6 bg-[#a91d54]"></span>
+                                            <div class="flex w-full gap-4 flex-col">
+                                                <span class="text-lg text-[#a91d54] text-center font-bold">
+                                                    Industry Benchmarked Specializations
+                                                </span>
+                                                <p class="text-sm md:text-base text-center font-bold">
+                                                    With the ITM MBA 𝒊Connect , you can choose from one of ten
+                                                    industry-preferred specializations. Each specialization comes with
+                                                    Professional Certifications to enhance work readiness.
+                                                </p>
+                                                <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+                                                    <div class="flex flex-col w-full">
+                                                        <span class="text-lg text-[#a91d54] text-center font-bold">
+                                                            New Age Specializations
+                                                        </span>
+                                                        <ul class="flex flex-col w-full">
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Financial Services</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Fintech</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Digital Marketing and Media Management</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Business Analytics
+                                                                </span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Retail Management and E-Commerce</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="flex flex-col w-full">
+                                                        <span class="text-lg text-[#a91d54] text-center font-bold">
+                                                            Mainstream Specializations
+                                                        </span>
+                                                        <ul class="flex flex-col w-full">
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Marketing Management</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>International Business</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Human Resources Management</span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Operations and Supply Chain Management
+                                                                </span>
+                                                            </li>
+                                                            <li class="flex w-full gap-2">
+                                                                <span class="text-[#a91d54]">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                        viewBox="0 0 24 24" stroke-width="1.5"
+                                                                        stroke="currentColor" class="size-5">
+                                                                        <path stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            d="m4.5 12.75 6 6 9-13.5" />
+                                                                    </svg>
+                                                                </span>
+                                                                <span>Finance</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flex w-full items-center justify-center">
+                                                    <button
+                                                        class="text-white flex w-fit gap-2 bg-[#a91d54] rounded-md py-2 px-4">
+                                                        <span>Know More</span>
+                                                        <span>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke-width="1.5"
+                                                                stroke="currentColor" class="size-6">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                                            </svg>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="BBA" class="none tabcontent p-5 border rounded-lg  w-full">
+                                <div class="flex flex-col gap-4 w-full">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+                                        <div class="flex w-full">
+                                            <div class="flex w-full md:h-80 relative aspect-square">
+                                                <img src="assets/banner-img/young-girl.webp" alt=""
+                                                    class="flex h-full w-full object-contain object-bottom">
+                                            </div>
+                                        </div>
+                                        <div class="flex w-full flex-col gap-2">
+                                            <span class="font-bold text-base md:text-lg text-[#a91d54]">BBA</span>
+                                            <p class="text-sm md:text-base">
+                                                After successfully teaching the MBA program (earlier known as PGDM) for
+                                                over
+                                                three decades, on popular demand, we launched the Bachelor of Business
+                                                Administration (ITM BBA 𝒊Connect ) program in 2024. Based on the
+                                                learnings
+                                                from the MBA program, the program is designed for real -life success.
+                                            </p>
+                                            <p class="text-sm md:text-base">
+                                                Designed completely by industry professionals, our ITM BBA 𝒊Connect is
+                                                a
+                                                3-year full-time program (with an optional 4th year for a BBA Honors
+                                                degree)
+                                                emphasizing practical, hands-on learning. Unlike traditional BBA, we
+                                                prioritize industry connections and experiential learning over
+                                                theoretical
+                                                classroom study. Assessment is based on internships, a capstone project,
+                                                industrial visits to Singapore and Dubai, case studies, and overall
+                                                readiness for the real-world challenges of business.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full bg-white gap-6 p-4 rounded-lg">
+                                        <div class="flex w-full gap-4 flex-col">
+                                            <span class="text-lg text-[#a91d54] text-center font-bold uppercase">
+                                                Industry Benchmarked Specializations
+                                            </span>
+                                            <div class="grid grid-cols-1 md:grid-cols-2 w-full">
+                                                <div class="flex flex-col w-full">
+                                                    <p class="text-sm md:text-base mx-auto max-w-xs">
+                                                        Our BBA 𝒊Connect program offers three specialized tracks chosen
+                                                        in collaboration with industry leaders to align with emerging
+                                                        opportunities in each sector. From the second year onwards,
+                                                        students can specialize in:
+                                                    </p>
+                                                </div>
+                                                <div class="flex flex-col w-full">
+                                                    <ul class="flex flex-col w-full">
+                                                        <li class="flex w-full gap-2">
+                                                            <span class="text-[#a91d54]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                                                    stroke="currentColor" class="size-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="m4.5 12.75 6 6 9-13.5" />
+                                                                </svg>
+                                                            </span>
+                                                            <span>Business Analytics</span>
+                                                        </li>
+                                                        <li class="flex w-full gap-2">
+                                                            <span class="text-[#a91d54]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                                                    stroke="currentColor" class="size-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="m4.5 12.75 6 6 9-13.5" />
+                                                                </svg>
+                                                            </span>
+                                                            <span>Digital Marketing & E-commerce</span>
+                                                        </li>
+                                                        <li class="flex w-full gap-2">
+                                                            <span class="text-[#a91d54]">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke-width="1.5"
+                                                                    stroke="currentColor" class="size-5">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        d="m4.5 12.75 6 6 9-13.5" />
+                                                                </svg>
+                                                            </span>
+                                                            <span>Finance & Banking</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </section>
+
+            <section class="flex flex-col h-auto w-full bg-[#f8f8f8]">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 items-center justify-center">
+                    <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">Some of our recruiters
+                    </h2>
+                    <p class="text-sm md:text-base text-left md:text-center">
+                        In recent years our students have been recruited by a broad range of companies, including:
+                    </p>
+                    <div class="flex flex-col w-full gap-3">
+                        <div class="swiper-container2 overflow-hidden w-full h-14 max-h-14 flex">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/1_cbf11ecff9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/2_9b2cca9f4d.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/3_8b8e282b0f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/4_397b0796a2.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/5_b92947941e.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/6_140912a8d9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/7_52b4cb0dda.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/8_c56ee998d1.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/9_66ce485e55.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/10_b1c711f35d.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/11_0087c37cdd.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/12_34f9f797ef.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/13_09d3784bd1.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/14_3236015130.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/15_9bcd2659ba.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/16_da382fceac.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/17_753ea93283.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/18_e927729d72.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/19_0659e5c59f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/20_20c7b66851.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/21_77854dc737.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/22_4ae15f03fb.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/23_96441c9266.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/24_5fd9b3f2da.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/25_2cb791b714.webp" alt="recruiters">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2 overflow-hidden w-full h-14 max-h-14 flex">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/26_6d37dceb7c.webpw" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/27_33f8e533c1.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/28_b852e1de26.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/29_723acaf690.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/30_d17a68ea7f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/31_aeddfcc40d.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/32_9788fb8573.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/33_d04b527116.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/34_0de9e3156a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/35_5fcaa613b9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/36_6895be8a14.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/37_61b9872ddd.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/38_57159f4181.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/38_57159f4181.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/40_356503a401.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/41_9b68f3ae61.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/42_f737d36ff9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/43_85f3cf9506.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/44_a9d7aaef99.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/45_26c8411f15.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/46_88698dd1a8.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/47_a2f3570c5e.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/48_748ec4127a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/49_52e62a4012.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/50_cec72a80e6.webp" alt="recruiters">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2 overflow-hidden w-full h-14 max-h-14 flex">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/51_1701330a29.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/52_96084c6991.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/54_1db12bbd4d.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/55_b665aff444.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/56_813e8b032e.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/57_7cc5787883.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/59_3368427b31.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/60_d26cd6c45f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/61_61f2adb2da.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/62_da21137639.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/63_3ed97eefec.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/64_7748a52528.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/65_5e6ab0ed97.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/66_6a9832e612.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/68_ee68765930.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/69_7fa2deeda8.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/70_556b7e12b3.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/71_77aedc850b.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/72_ee603a04cf.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/74_6056871d22.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/75_c154d4180b.webp" alt="recruiters">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-container2 overflow-hidden w-full h-14 max-h-14 flex">
+                            <div class="swiper-wrapper ">
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/76_0e64fb917a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/77_a44c31e2a6.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/79_b8845fa616.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/80_8994ecd5f9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/81_dd3c5f2fe6.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/82_b38e7cd720.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/83_3a1c8e50c7.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/84_3126731101.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/85_43e3adad7a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/86_b19fdc589f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/87_2e60d777a8.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/88_5281abea72.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/89_3a8e04865a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/90_7f66feadb6.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/91_9f3111e3d2.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/92_991e0fce3c.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/93_3e47ee25d5.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/94_24b538ddfa.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/95_606ae17d2f.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/96_3bc77955a2.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/97_a08f089af4.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/98_8ea491d4b9.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/99_612cd4308a.webp" alt="recruiters">
+                                </div>
+                                <div class="swiper-slide  rounded-md flex px-2 py-1">
+                                    <img src="https://cdn.itm.edu/assets/100_1c705f981e.webp" alt="recruiters">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-full items-center justify-center">
+                        <button class="text-white flex w-fit gap-2 bg-[#a91d54] rounded-md py-2 px-4">
+                            <span>Know More</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col h-auto w-full bg-[#f8f8f8]">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto items-center justify-center">
+                    <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">On-Campus Business
+                        Start-up Incubator</h2>
+                    <p class="text-sm md:text-base text-left md:text-center">
+                        Not everyone wants to take up a job at the end of the program. Some want to build their
+                        start-up! Our On-Campus Business Start-up Incubator provides students with access to
+                        resources to develop their start-up ideas. Students may opt to work on their Startup idea
+                        instead of taking up the 5 month Internship. ITM has a vast array of talent in Tech, Design,
+                        Finance and supply chain fields among others, and Incubatees will have access to their time
+                        and knowledge.
+
+                        Events such as hackathons, industry masterclasses, business conferences,, startup bootcamps
+                        and yatras ensure that ideas grow beyond a business plan and feasibility study, into an
+                        actual start-up.
+                    </p>
+                    <div class="flex w-full items-center justify-center">
+                        <button class="text-white flex w-fit gap-2 bg-[#a91d54] rounded-md py-2 px-4">
+                            <span>Know More</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+            </section>
+
+            <section class="flex flex-col h-auto w-full bg-[#a91d54]">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex flex-col gap-2 items-center justify-center w-full ">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl text-white font-bold">Alumni
+                            Speaks</h2>
+                    </div>
+                    <div class="flex w-full overflow-x-scroll pb-3">
+                        <div class="flex w-fit gap-4">
+                            <div class="flex w-80 flex-col bg-white rounded-md">
+                                <div class="flex w-full relative aspect-video">
+                                    <lite-youtube videoid="Fy0O5U-mn4E" class="rounded-md" title="Play: Video">
+                                        <a class="lite-youtube-fallback"
+                                            href="https://www.youtube.com/watch?v=Fy0O5U-mn4E"></a>
+                                    </lite-youtube>
+                                </div>
+                                <div class="flex p-4 flex-col">
+                                    <span class="font-bold text-sm">Manas Kumar Sinha</span>
+                                    <p class="text-sm flex flex-col">
+                                        <span>Assistant Vice President,</span>
+                                        <span>Credit Risk Management</span>
+                                    </p>
+                                    <span class="font-bold text-sm">Yes Bank</span>
+                                </div>
+                            </div>
+                            <div class="flex w-80 flex-col bg-white rounded-md">
+                                <div class="flex w-full relative aspect-video">
+                                    <lite-youtube videoid="J_a-VT_SrwI" class="rounded-md" title="Play: Video">
+                                        <a class="lite-youtube-fallback"
+                                            href="https://www.youtube.com/watch?v=J_a-VT_SrwI"></a>
+                                    </lite-youtube>
+                                </div>
+                                <div class="flex p-4 flex-col">
+                                    <span class="font-bold text-sm">Niranjanprasad Bhagwat</span>
+                                    <p class="text-sm flex flex-col">
+                                        <span>Associate Vice President,</span>
+                                    </p>
+                                    <span class="font-bold text-sm">Sterling</span>
+                                </div>
+                            </div>
+                            <div class="flex w-80 flex-col bg-white rounded-md">
+                                <div class="flex w-full relative aspect-video">
+                                    <lite-youtube videoid="qEzXRIVYoho" class="rounded-md" title="Play: Video">
+                                        <a class="lite-youtube-fallback"
+                                            href="https://www.youtube.com/watch?v=qEzXRIVYoho"></a>
+                                    </lite-youtube>
+                                </div>
+                                <div class="flex p-4 flex-col">
+                                    <span class="font-bold text-sm">Vikas Singh Panwar</span>
+                                    <p class="text-sm flex flex-col">
+                                        <span>AVP - Talent Acquisition (Risk)</span>
+                                    </p>
+                                    <span class="font-bold text-sm">JPMorgan Chase &amp; Co.</span>
+                                </div>
+                            </div>
+                            <div class="flex w-80 flex-col bg-white rounded-md">
+                                <div class="flex w-full relative aspect-video">
+                                    <lite-youtube videoid="WEoYjQratXk" class="rounded-md" title="Play: Video">
+                                        <a class="lite-youtube-fallback"
+                                            href="https://www.youtube.com/watch?v=WEoYjQratXk"></a>
+                                    </lite-youtube>
+                                </div>
+                                <div class="flex p-4 flex-col">
+                                    <span class="font-bold text-sm">Noopur Parasher</span>
+                                    <p class="text-sm flex flex-col">
+                                        <span>People Partner</span>
+                                        <span>Credit Risk Management</span>
+                                    </p>
+                                    <span class="font-bold text-sm">A.P. Moller - Maersk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex flex-col h-auto w-full ">
+                <div
+                    class="flex w-full flex-col px-4 py-4 gap-4 md:gap-6 lg:gap-8 sm:py-6 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 w-full gap-4">
+                        <div class="flex flex-col w-full gap-4">
+                            <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-5xl font-bold">
+                                Alumni
+                                Speaks</h2>
+                            <p class="text-sm md:text-base">
+                                Nestled in Kharghar, Navi Mumbai, a thriving "Smart City" and hub of global financial
+                                activities, our technologically advanced and wi-fi enabled, green campus provides an
+                                ideal backdrop for academic and professional growth. We recently updated the campus
+                                infrastructure and have brand-new interactive air conditioned classrooms, video
+                                conferencing facilities, auditorium and specialized labs. Our campus has plenty of green
+                                open spaces, an amphitheater, etc. We provide our students access to the latest
+                                softwares and digital libraries. We also offer hostel facilities so students can benefit
+                                from a vibrant community.
+                            </p>
+                            <div class="flex w-full items-center justify-start">
+                                <button class="text-white flex w-fit gap-2 bg-[#a91d54] rounded-md py-2 px-4">
+                                    <span>Know More</span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="flex p-4 rounded-md bg-[#FEEAF3] gap-2 flex-col">
+                                <span class="text-base md:text-lg text-[#a91d54]">Campus Location:</span>
+                                <p class="text-sm md:text-base">
+                                    Campus Location: ITM Skills University, Navi Mumbai Plot 25 & 26, Institutional
+                                    Area, Sector 4, Kharghar, Navi Mumbai, Maharashtra 410210
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid w-full grid-cols-2 gap-2 md:gap-4">
+                            <div class="flex w-full">
+                                <div class="flex relative aspect-video w-full ">
+                                    <img src="assets/banner-img/campus1.png" alt=""
+                                        class="flex w-full h-full object-cover rounded-md">
+                                </div>
+                            </div>
+                            <div class="flex w-full items-end">
+                                <div class="flex relative h-[80%] aspect-video w-full ">
+                                    <img src="assets/banner-img/campus2.png" alt=""
+                                        class="flex w-full h-full object-cover rounded-md">
+                                </div>
+                            </div>
+                            <div class="flex w-full">
+                                <div class="flex relative h-[80%] aspect-video w-full ">
+                                    <img src="assets/banner-img/campus3.png" alt=""
+                                        class="flex w-full h-full object-cover rounded-md">
+                                </div>
+                            </div>
+                            <div class="flex w-full">
+                                <div class="flex relative aspect-video w-full ">
+                                    <img src="assets/banner-img/campus4.png" alt=""
+                                        class="flex w-full h-full object-cover rounded-md">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="flex w-full ">
+                <iframe class="h-80 w-full flex"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6922604959495!2d73.06141857425068!3d19.033277553314196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c3da3f19d2db%3A0x5c7077ac7d59acb0!2sITM%20Skills%20University%2C%20Navi%20Mumbai!5e0!3m2!1sen!2sin!4v1723360092696!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+        </main>
+
+        <section class="modal flex w-full h-full transition-all -top-full absolute z-50 bg-black bg-opacity-30">
+            ss
+            <div class="modal-content  flex w-full max-w-7xl mx-auto items-center justify-center">
+
+                <div class="flex w-full flex-col max-w-sm mx-auto bg-white p-5 gap-5 rounded-lg">
+                    <div class="flex w-full relative items-center">
+                        <h3 class="text-xl font-bold">Enter details to get brochure</h3>
+                        <button id="al" aria-label="close" onclick="closeModal()"
+                            class="w-fit h-fit p-1.5 bg-brand text-white absolute flex right-0 rounded-md border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="size-6">
+                                <path fill-rule="evenodd"
+                                    d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                    </div>
+                    <form id="form" autocomplete="off" class="flex flex-col rounded-md gap-4 py-2 px-2 w-full">
+
+                        <div
+                            class="flex w-full transition-all group hover:shadow-sm hover:border-yellow-500 flex-col relative border rounded-md">
+                            <input type="text" name="fullname" id="fullname" autocomplete="false"
+                                class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
+                                placeholder="Enter Your Full Name *">
+                            <span class="flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                id="fullnameError"></span>
+                        </div>
+
+                        <div
+                            class="flex w-full flex-col relative transition-all group hover:shadow-sm hover:border-yellow-500 border rounded-md">
+                            <input type="email" name="email" id="email" autocomplete="false"
+                                class="flex w-full border text-sm px-3 py-2 rounded-md outline-none border-none focus:outline-none"
+                                placeholder="Enter Your Email *">
+                            <span class="flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                id="emailError"></span>
+                        </div>
+                        <div
+                            class="flex w-full flex-col relative transition-all group hover:shadow-sm hover:border-yellow-500 border rounded-md">
+                            <div class="relative flex w-full rounded-md shadow-sm">
+                                <div class="flex w-20 items-center">
+                                    <select id="countrySelect" name="country" autocomplete="country"
+                                        class="flex w-full  text-sm h-9 rounded-md outline-none border-none focus:outline-none">
+                                    </select>
+                                </div>
+                                <input type="number" name="phone-number" id="number" autocomplete="false"
+                                    class="flex w-full border text-sm pl-3 py-2 rounded-md outline-none border-none focus:outline-none"
+                                    placeholder="Enter Your Mobile Number *">
+                            </div>
+                            <span class="flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                id="numberError"></span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 w-full">
+                            <div
+                                class="location flex w-full flex-col relative transition-all group hover:shadow-sm hover:border-yellow-500 border rounded-md">
+                                <select id="state" name="state" autocomplete="none"
+                                    class="flex w-full border text-sm h-9 px-3 rounded-md outline-none border-none focus:outline-none">
+                                    <option value="" class="flex w-full h-full text-sm py-2 " disabled selected>
+                                        Select State</option>
+                                </select>
+                                <span class="flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                    id="stateError"></span>
+                            </div>
+                            <div
+                                class="location flex w-full flex-col relative transition-all group hover:shadow-sm hover:border-yellow-500 border rounded-md">
+                                <select id="city" name="city" disabled autocomplete="none"
+                                    class="flex w-full border text-sm h-9 px-3 rounded-md outline-none border-none focus:outline-none">
+                                    <option value="" class="flex w-full h-full text-sm py-2 " disabled selected>
+                                        Select City</option>
+                                </select>
+                                <span class="flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                    id="cityError"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2 w-full">
+                            <div class="flex w-full items-center justify-center bg-white rounded-md">
+                                <span type="text" id="genratedCaptcha" name="genratedCaptcha" contenteditable="false"
+                                    autocomplete="false"
+                                    class="flex h-4/5 my-auto w-full py-2 pl-3 rounded-sm outline-none items-center justify-center border-none focus:outline-none"
+                                    placeholder="Enter Captcha *"
+                                    style="user-select: none; font-size: 18px; color: black;">
+                                </span>
+                                <button type="button" id="refreshCaptchaBtn"
+                                    class="flex h-10 w-10 my-auto rounded-md bg-white items-center justify-center text-yellow-400 font-extrabold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-8 h-8">
+                                        <path fill-rule="evenodd"
+                                            d="M4.755 10.059a7.5 7.5 0 0 1 12.548-3.364l1.903 1.903h-3.183a.75.75 0 1 0 0 1.5h4.992a.75.75 0 0 0 .75-.75V4.356a.75.75 0 0 0-1.5 0v3.18l-1.9-1.9A9 9 0 0 0 3.306 9.67a.75.75 0 1 0 1.45.388Zm15.408 3.352a.75.75 0 0 0-.919.53 7.5 7.5 0 0 1-12.548 3.364l-1.902-1.903h3.183a.75.75 0 0 0 0-1.5H2.984a.75.75 0 0 0-.75.75v4.992a.75.75 0 0 0 1.5 0v-3.18l1.9 1.9a9 9 0 0 0 15.059-4.035.75.75 0 0 0-.53-.918Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div
+                                class="flex relative w-full transition-all bg-white rounded-md group hover:shadow-sm hover:border-yellow-500 border rounded-md">
+                                <input type="text" id="captcha" name="captcha" autocomplete="false"
+                                    class="flex h-4/5 my-auto w-full text-sm py-2 pl-3 rounded-sm outline-none border-none focus:outline-none"
+                                    placeholder="Enter Captcha *">
+                                <span class="flex absolute -bottom-4 left-0 text-xs text-brand-red pl-3"
+                                    style="font-size: 10px; color:red;" id="captchaError"></span>
+                            </div>
+                        </div>
+
+                        <div class="flex w-full h-fit relative">
+                            <label for="term" class="w-full h-10 flex items-start justify-start">
+                                <input type="checkbox" checked name="term" id="term">
+                                <p class="w-fit h-fit font-bold" style="font-size: 12px;"> &nbsp; I
+                                    authorise &
+                                    allow ITM
+                                    to
+                                    connect with me. This will override the registry on DND/NDNC.</p>
+                            </label>
+                            <span class=" flex absolute -bottom-4 left-0 pl-3" style="font-size: 10px; color:red;"
+                                id="termError"></span>
+                        </div>
+
+                        <div class="flex w-full">
+                            <button type="submit"
+                                class="flex w-full items-center justify-center rounded-full bg-[#A91D54] hover:bg-black transition-all py-3 text-center text-base text-white ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
