@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const header = `
+  const header = `
      <header class="flex w-full">
             <div class="flex max-w-7xl gap-4 mx-auto w-full justify-between px-4 py-2">
                 <div class="flex w-fit">
@@ -261,22 +261,22 @@ document.addEventListener("DOMContentLoaded", function () {
         </header>
     `;
 
-    const headerContainer = document.getElementById("header-container")
-    headerContainer.innerHTML = header;
+  const headerContainer = document.getElementById("header-container");
+  headerContainer.innerHTML = header;
 
-    const mobileMenu = document.getElementById("mobile-nav");
-    const openButton = document.getElementById("open");
-    const closeButton = document.getElementById("close");
+  const mobileMenu = document.getElementById("mobile-nav");
+  const openButton = document.getElementById("open");
+  const closeButton = document.getElementById("close");
 
-    openButton.addEventListener("click", () => {
-        mobileMenu.style.display = "flex";
-        openButton.style.display = "none";
-        closeButton.style.display = "block";
-    });
+  openButton.addEventListener("click", () => {
+    mobileMenu.style.display = "flex";
+    openButton.style.display = "none";
+    closeButton.style.display = "block";
+  });
 
-    closeButton.addEventListener("click", () => {
-        mobileMenu.style.display = "none";
-        openButton.style.display = "block";
-        closeButton.style.display = "none";
-    });
-})
+  closeButton.addEventListener("click", () => {
+    mobileMenu.style.display = "none";
+    openButton.style.display = "block";
+    closeButton.style.display = "none";
+  });
+});

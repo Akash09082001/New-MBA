@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css">
+
+</head>
+
+<body class="w-screen h-screen flex font-inter">
+    <div class="flex w-full flex-col h-screen">
+        <header class="flex w-full shadow-md">
+            <div class="flex flex-col w-full max-w-7xl divide-y mx-auto">
+                <nav class="flex flex-col w-full px-5 py-3">
+                    <div class="flex h-10 w-full justify-between">
+                        <div class="flex w-full h-full justify-between">
+                            <div class="flex h-full w-fit aspect-auto flex-grow-0 items-center">
+                                <img class="h-10 w-fit object-contain flex" src="../assets/logo/b-school-logo.webp"
+                                    alt="MBA Logo">
+                            </div>
+                            <ul class="hidden lg:ml-6 lg:flex lg:flex-grow lg:space-x-8 items-center justify-center">
+
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/aboutus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Admission</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/blog"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Placement</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Program</a>
+                                </li>
+                                <li class="relative flex items-center justify-center">
+                                    <button id="dropdown-button" type="button"
+                                        class="inline-flex items-center gap-x-1 text-sm  text-gray-900"
+                                        aria-expanded="false">
+                                        <span class="h-fit">Specialization</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <div id="dropdown-menu"
+                                        class="hidden absolute -left-10 top-[34px] z-10 w-screen max-w-min ">
+                                        <ul
+                                            class="w-80 shrink rounded-sm bg-white text-sm text-gray-900 shadow-lg ring-1 ring-gray-300">
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-fashion-design/"
+                                                    class="block p-2">
+                                                    Financial Services
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-interior-design/"
+                                                    class="block p-2">
+                                                    Fintech
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-visual-communication/"
+                                                    class="block p-2">
+                                                    Digital Marketing and Media Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-animation-and-vfx/"
+                                                    class="block p-2">
+                                                    Business Analytics
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Retail Management and E-Commerce
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Marketing Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    International Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Human Resource Management Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Operation & Supply Chain Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-gray-100">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Finance
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Incubator</a>
+                                </li>
+                                <li class="flex items-center justify-center">
+                                    <a href="https://www.itm.edu/contactus"
+                                        class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                        Campus life</a>
+                                </li>
+                            </ul>
+                            <div class="hidden lg:flex flex-grow-0 gap-3">
+                                <button
+                                    class="flex w-fit px-4 py-2 text-sm md:text-base bg-brand text-white rounded-md">
+                                    Enquire Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="-mr-2 flex items-center lg:hidden">
+                            <button id="menu-toggle" type="button"
+                                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset"
+                                aria-controls="mobile-menu" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                                </svg>
+                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:hidden" id="mobile-menu">
+                        <ul class="space-y-1 pb-3 pt-2">
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Admission
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Placement
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Program
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <details class="w-full text-gray-900">
+                                    <summary class="flex text-sm px-1 py-1  w-full">
+                                        <span class="h-fit">Program</span>
+                                        <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </summary>
+                                    <div class="flex w-full ">
+                                        <ul class="w-full text-sm ">
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-fashion-design/"
+                                                    class="block p-2">
+                                                    Financial Services
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-interior-design/"
+                                                    class="block p-2">
+                                                    Fintech
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-visual-communication/"
+                                                    class="block p-2">
+                                                    Digital Marketing and Media Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-animation-and-vfx/"
+                                                    class="block p-2">
+                                                    Business Analytics
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Retail Management and E-Commerce
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Marketing Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    International Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Human Resource Management Business
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Operation & Supply Chain Management
+                                                </a>
+                                            </li>
+                                            <li class="flex w-full px-2 hover:bg-brand hover:text-white rounded-md">
+                                                <a href="https://www.itm.edu/idm-bachelor-of-design-in-ux-design/"
+                                                    class="block p-2">
+                                                    Finance
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/aboutus"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Incubator
+                                </a>
+                            </li>
+                            <li class="flex w-full border-b">
+                                <a href="https://www.itm.edu/blog"
+                                    class="inline-flex items-center px-1 py-1 text-sm text-gray-900 transition-all hover:text-brand">
+                                    Campus Life
+                                </a>
+                            </li>
+                            <li class="flex w-full py-2">
+                                <a href="https://www.itm.edu/blog"
+                                    class="inline-flex items-center justify-center py-2.5 text-sm bg-brand text-white rounded-md w-full">
+                                    Enquire Now
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="flex w-full flex-col h-[calc(100%-50px)] overflow-y-auto ">
+
+            <section
+                class="flex w-full bg-[url('https://www.itm.edu/mba-in-business-analytics/images/bannerBg1.webp')] bg-cover bg-[center_top_20%]">
+                <div class="flex items-center justify-center w-full aspect-video h-80">
+                    <div class="flex items-center justify-center flex-col gap-4">
+                        <h2
+                            class="text-3xl md:text-[100px] font-Bebas-Neue leading-none md:pt-3 p-2 bg-[rgba(50,50,50,0.1)] text-[#FFBE41] px-3 rounded-3xl border border-[#ffbd4180] backdrop-blur-[5px]">
+                            MBA &#119946;Connect 2025-27
+                        </h2>
+                        <h2
+                            class="text-xl bg-[rgba(50,50,50,0.1)] text-[#FFBE41] px-3 py-1 rounded-3xl border border-[#ffbd4180] backdrop-blur-[5px]">
+                            Specialization: Financial Technologies (FinTech)
+                        </h2>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="flex w-full h-auto bg-[#f8f8f8]">
+                <div class="flex flex-col w-full p-5 md:py-8 lg:py-10 xl:py-14 max-w-7xl mx-auto">
+                    <div class="flex flex-col w-full  md:items-center md:justify-center gap-5 pb-4">
+                        <h2
+                            class="flex font-Bebas-Neue flex-wrap w-full items-center justify-left sm:justify-center  text-xl sm:text-2xl lg:text-[40px]">
+                            ITM MBA 𝒊Connect 2025-27
+                        </h2>
+                        <h3
+                            class="flex font-Bebas-Neue flex-wrap w-full items-center justify-left sm:justify-center  text-lg sm:text-xl lg:text-3xl text-brand">
+                            WHERE YOU LEARN FROM EXPERIENCE
+                        </h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
+
+                        <div class="flex w-full md:justify-start rounded-lg">
+                            <div class="flex w-full h-fit aspect-video rounded-lg">
+                                <img class="flex w-full object-cover h-fit rounded-xl"
+                                    src="https://cdn.itm.edu/assets/businessanalytics_ca84226399.webp" alt="student">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col gap-3 md:gap-5 w-full">
+                            <div class="flex flex-col w-full font-inter">
+                                <p class="text-sm lg:text-base text-justify">
+                                    MBA iConnect 2025-27 <br>
+                                    The ITM MBA iConnect is a two-year, full-time program that transcends traditional
+                                    classroom education, providing a
+                                    dynamic, hands-on learning experience. You will benefit from instruction by both
+                                    esteemed faculty and industry
+                                    professionals, seamlessly integrating practical experience with academic theory.
+                                </p>
+                                <p class="text-sm lg:text-base text-justify pt-3">
+                                    In your second year, you can choose from ten industry-focused specializations, each
+                                    accompanied by professional
+                                    certifications to enhance your career readiness. The new-age specializations include
+                                    FinTech, Digital Marketing and
+                                    Media Management, Financial Services, Retail Management & E-Commerce, and Business
+                                    Analytics. You can also explore
+                                    mainstream specializations such as Marketing Management, International Business,
+                                    Human Resource Management, Operations &
+                                    Supply Chain Management, and Finance. Plus, you gain access to over 35 professional
+                                    certifications at no extra cost,
+                                    ensuring you’re fully equipped for your career.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-center w-full">
+
+                                <a href="#"
+                                    class="bg-brand text-white border transition-all py-3 px-4 rounded-lg items-center justify-center flex gap-2 hover:bg-black">
+                                    <span>Know More</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex w-full">
+                <div class="flex w-full gap-4 flex-col px-4 py-4 md:py-6 lg:py-8 xl:py-10 max-w-7xl mx-auto">
+                    <div class="flex w-full md:justify-center">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-[40px]">
+                            Financial Technologies (FinTech)
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex w-full">
+                            <div class="flex flex-col gap-4">
+                                <p class="text-sm md:text-base">
+                                    The MBA in FinTech program at ITM Business School offers a specialized curriculum
+                                    focused on financial technology and
+                                    its transformative impact on the financial industry. Students will gain
+                                    comprehensive insights into fintech innovations,
+                                    data analytics, and digital financial solutions, equipping them with the knowledge
+                                    to excel in this dynamic field. The
+                                    program also provides valuable networking opportunities with industry professionals,
+                                    enhancing career prospects.
+                                    Students can participate in fintech-related internships and competitions, offering
+                                    practical experience and real-world
+                                    application of their skills. These opportunities are designed to significantly
+                                    advance career development and prepare
+                                    students for success in the evolving fintech landscape.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex w-full bg-[#ffecdb] rounded-xl p-4">
+                            <div class=" ">
+                                <div class="pb-2">
+                                    <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-3xl text-brand">
+                                        Indicative Job Roles on Program Completion
+                                    </h2>
+                                </div>
+                                <ul class="flex flex-col gap-2">
+                                    <li class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="size-6 text-brand">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                        Fintech Product Developer
+                                    </li>
+                                    <li class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="size-6 text-brand">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                        Wealthtech and Robo Advisory Roles
+                                    </li>
+                                    <li class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="size-6 text-brand">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                        Blockchain Analyst and Developer
+                                    </li>
+                                    <li class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="size-6 text-brand">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                        Fraud Analytics
+                                    </li>
+                                    <li class="flex gap-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="2" stroke="currentColor" class="size-6 text-brand">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                        Digital Banking Roles
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex w-full">
+                <div class="flex w-full gap-4 flex-col px-4 py-4 md:py-6 lg:py-8 xl:py-10 max-w-7xl mx-auto">
+                    <div class="flex w-full md:justify-center">
+                        <h2 class="font-Bebas-Neue text-3xl w-fit md:text-4xl lg:text-[40px]">
+                            Value-Added Professional Certifications
+                        </h2>
+                    </div>
+                    <div class="flex flex-col items-center justify-center py-8">
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch ">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/value_add_cert_img_23_63a34c4c4c.webp"
+                                    alt="SAS Logo" class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    Affiliated Membership of CISI (Chartered Institute for Securities & Investment, UK)
+                                </h2>
+                                <p>
+                                    The Affiliated Membership of the Chartered Institute for Securities & Investment
+                                    (CISI) provides professionals with
+                                    access to a global network of finance experts and a wealth of resources in
+                                    securities and investment. This membership
+                                    facilitates ongoing professional development through various educational resources,
+                                    industry insights, and networking
+                                    opportunities. Members benefit from continuous learning and career advancement,
+                                    supported by the institute's commitment
+                                    to maintaining high standards in the finance industry.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/value_add_cert_img_9_3f77e8f515.webp"
+                                    alt="SAS Logo" class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    Diploma in Banking Technology
+                                </h2>
+                                <p>
+                                    The Diploma in Banking Technology offers comprehensive coverage of essential areas
+                                    in banking technology, including
+                                    digital systems and cybersecurity. This diploma is designed for professionals
+                                    seeking advanced roles in the financial
+                                    sector, emphasizing the latest innovations and technological advancements in
+                                    banking. Participants will gain expertise
+                                    in modern banking technologies and their applications, preparing them for leadership
+                                    positions and roles that require a
+                                    deep understanding of digital banking systems and cybersecurity measures.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/value_add_cert_img_17_e9e93572bf.webp"
+                                    alt="SAS Logo" class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    Certificate Course in Digital Banking-by IIBF (Indian Institute of Banking &
+                                    Finance)
+                                </h2>
+                                <p>
+                                    The Certificate Course in Digital Banking, provided by the Indian Institute of
+                                    Banking & Finance (IIBF), focuses on the
+                                    fundamentals of digital banking. This course covers key aspects of online
+                                    transactions, digital banking regulations, and
+                                    modern banking technologies. It is designed to prepare professionals for
+                                    contemporary roles in the banking industry by
+                                    equipping them with the essential knowledge and skills needed to navigate and excel
+                                    in the evolving digital banking
+                                    landscape.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/aws_b569e75a9d.png" alt="SAS Logo"
+                                    class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    Certificate Prevention of Cyber Crimes and Fraud Management- by IIBF (Indian
+                                    Institute of Banking & Finance)
+                                </h2>
+                                <p>
+                                    The Certificate in Prevention of Cyber Crimes and Fraud Management, offered by the
+                                    Indian Institute of Banking & Finance
+                                    (IIBF), provides specialized training in strategies to prevent cyber crimes and
+                                    manage fraud. This certification focuses
+                                    on techniques to safeguard financial systems and ensure their security. Participants
+                                    will learn to identify and mitigate
+                                    potential threats, implement effective fraud management practices, and maintain the
+                                    integrity of financial operations
+                                    against cyber threats and fraudulent activities.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/value_add_cert_img_25_42a824cbd1.webp"
+                                    alt="SAS Logo" class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    NISM-Series-XXI-A: Portfolio Management Services (PMS) Distributors Certification
+                                </h2>
+                                <p>
+                                    The NISM-Series-XXI-A: Portfolio Management Services (PMS) Distributors
+                                    Certification is aimed at professionals who
+                                    distribute portfolio management services. This certification covers regulatory
+                                    standards, client interaction, and
+                                    portfolio management strategies designed to meet investors' diverse needs. It equips
+                                    individuals with the skills to
+                                    effectively distribute PMS products, ensuring compliance with regulatory
+                                    requirements and the ability to tailor
+                                    portfolio management solutions to client objectives.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class=" shadow-lg rounded-lg overflow-hidden mb-8 flex flex-col sm:flex-row items-center sm:items-stretch">
+                            <div
+                                class="w-full p-6 border border-brand flex items-center rounded-t-lg md:rounded-tr-none md:rounded-l-lg justify-center sm:w-1/4">
+                                <img src="https://cdn.itm.edu/assets/google_analytics_832b2e6c7a.jpg" alt="SAS Logo"
+                                    class="h-16 flex object-contain">
+                            </div>
+                            <div class="w-full bg-brand p-6 text-white sm:w-3/4">
+                                <h2 class="font-Bebas-Neue font-bold text-2xl md:text-3xl mb-2">
+                                    Certification Exam in Anti-Money Laundering & Know Your Customer - by IIBF
+                                </h2>
+                                <p>
+                                    The Certification Exam in Anti-Money Laundering & Know Your Customer, provided by
+                                    the Indian Institute of Banking &
+                                    Finance (IIBF), addresses critical aspects of anti-money laundering (AML) and
+                                    customer due diligence practices. This
+                                    certification equips professionals with the expertise to identify suspicious
+                                    activities, implement effective compliance
+                                    measures, and adhere to regulatory standards. It ensures that individuals are
+                                    proficient in safeguarding against
+                                    financial crimes and maintaining robust AML and KYC practices within their
+                                    organizations.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="flex w-full bg-[#ffecdb]">
+                <div class="flex w-full gap-4 flex-col px-4 py-4 md:py-6 lg:py-8 xl:py-10 max-w-7xl mx-auto">
+                    <!-- Main Section -->
+                    <div class="text-center">
+                        <h1 class="font-Bebas-Neue text-[40px] mb-4">GLOBAL IMMERSION PROGRAMS</h1>
+                        <p class="text-base mb-8 max-w-4xl mx-auto">
+                            In collaboration with international universities and corporate houses, ITM offers the Global
+                            Immersion Programs (GIP) at four locations for this program: UAE, Malaysia, Singapore, and
+                            Europe.
+                            Students are encouraged to participate because the experience provides an opportunity to
+                            interact with
+                            global industry leaders and exposure to multicultural environments.
+                        </p>
+                    </div>
+
+                    <!-- Card 1: UAE -->
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-lg shadow-lg relative" onclick="toggleAccordion(1)">
+                            <!-- Image -->
+                            <img id="accordionImage1" src="https://cdn.itm.edu/assets/uae_efe17ed7e0.webp"
+                                alt="Global Immersion UAE" class="cursor-pointer w-full h-40 md:h-80 object-cover">
+
+                            <!-- Text Overlay on the Image -->
+                            <div class="absolute bottom-0 left-0 bg-black bg-opacity-20 text-white p-4 w-full">
+                                <h2 class="text-xl font-bold">GIP at UAE <span class="text-yellow-500">(4 Days)</span>,
+                                    University of Dubai</h2>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Accordion Content -->
+                        <div id="accordionContent1" class="p-6 hidden bg-white border rounded-b-lg">
+                            <div class="container mx-auto px-4 py-4">
+                                <h1 class="text-base font-bold text-center mb-4">Hosted by the University of Dubai</h1>
+                                <p class="text-center mb-8 text-gray-700">
+                                    Enhance your knowledge with sessions at the University of Dubai. Learn from top
+                                    faculty and industry
+                                    professionals, explore innovative labs, and join interactive workshops, gaining
+                                    practical insights into current
+                                    industry trends within a dynamic academic setting.
+                                </p>
+
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <!-- Industry Visits -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4">INDUSTRY VISITS</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Nasdaq Dubai:</span> Dive into the
+                                                    dynamic world of finance with an
+                                                    exclusive visit to Nasdaq Dubai, the leading international stock
+                                                    exchange in the Middle East,
+                                                    offering insights into global trading and market operations.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Apple Inc.:</span> Explore the forefront
+                                                    of innovation at Apple
+                                                    Dubai, where cutting-edge technology and sleek design converge.
+                                                    Witness firsthand how Apple
+                                                    revolutionizes the tech industry from the heart of this vibrant
+                                                    city.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Excursions -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4">EXCURSIONS</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Visit to Palm Jumeirah:</span> Discover
+                                                    the architectural marvel of
+                                                    Palm Jumeirah, an iconic man-made island that epitomizes luxury and
+                                                    innovation in Dubai.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Dubai City Immersion Tour:</span>
+                                                    Immerse yourself in the vibrant
+                                                    culture and futuristic skyline of Dubai with our comprehensive city
+                                                    tour, showcasing the best of
+                                                    this dynamic metropolis.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Cultural Exploration featuring Bur
+                                                        Dubai, Dhow Cruise, and Desert
+                                                        Safari:</span> Experience the rich heritage of Dubai with a
+                                                    cultural tour that includes the
+                                                    historic Bur Dubai, a scenic Dhow Cruise, and an adventurous Desert
+                                                    Safari.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Palm Atlantis & Burj Al Arab:</span>
+                                                    Marvel at the opulence of Dubai
+                                                    with visits to Palm Atlantis and Burj Al Arab, two of the most
+                                                    luxurious and iconic landmarks in
+                                                    the world.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Burj Khalifa:</span> Stand in awe of the
+                                                    Burj Khalifa, the tallest
+                                                    building in the world, and enjoy breathtaking views of Dubai's
+                                                    stunning skyline from its
+                                                    observation decks.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 1: SINGAPORE -->
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-lg shadow-lg relative" onclick="toggleAccordion(2)">
+                            <!-- Image -->
+                            <img id="accordionImage1" src="https://cdn.itm.edu/assets/singapore_793cb451af.webp"
+                                alt="Global Immersion UAE" class="cursor-pointer w-full h-40 md:h-80 object-cover">
+
+                            <!-- Text Overlay on the Image -->
+                            <div class="absolute bottom-0 left-0 bg-black bg-opacity-20 text-white p-4 w-full">
+                                <h2 class="text-xl font-bold">GIP at Singapore <span class="text-yellow-500">(7
+                                        Days)</span>,
+                                    James Cook University, Singapore</h2>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Accordion Content -->
+                        <div id="accordionContent2" class="p-6 hidden bg-white border rounded-b-lg">
+                            <div class="container mx-auto px-4 py-4">
+                                <h1 class="text-base font-bold text-center mb-4">Hosted by James Cook University</h1>
+                                <p class="text-center mb-8 text-gray-700">
+                                    Experience an inspiring academic journey at James Cook University in Singapore.
+                                    Learn from renowned professors, tour
+                                    state-of-the-art facilities, and take part in immersive activities that offer a
+                                    unique perspective on various fields of
+                                    study.
+                                </p>
+
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <!-- Industry Visits -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4 uppercase">Sessions:</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Global HR Practice:</span> Explore
+                                                    international human resource strategies and best practices in this
+                                                    insightful session.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Diversity, Equity & Inclusion and Social
+                                                        Psychology:</span> Understand the principles of diversity,
+                                                    equity, and inclusion through the lens of social psychology in this
+                                                    engaging
+                                                    session.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Excursions -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4 uppercase">Excursions</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Aquaculture Lab:</span> Discover the
+                                                    innovative world of sustainable fish farming at the cutting-edge
+                                                    Aquaculture Lab.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Universal Studios:</span>
+                                                    Enjoy an action-packed day with thrilling rides and attractions at
+                                                    Universal Studios Singapore.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">CSky Park, Sentosa:</span> Experience
+                                                    breathtaking views and exciting activities at the iconic Sky Park on
+                                                    Sentosa Island.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 1: MALAYSIA -->
+                    <div class="relative">
+                        <div class="overflow-hidden rounded-lg shadow-lg relative" onclick="toggleAccordion(3)">
+                            <!-- Image -->
+                            <img id="accordionImage" src="https://cdn.itm.edu/assets/malaysia_c35f53680d.webp"
+                                alt="Global Immersion UAE" class="cursor-pointer w-full h-40 md:h-80 object-cover">
+
+                            <!-- Text Overlay on the Image -->
+                            <div class="absolute bottom-0 left-0 bg-black bg-opacity-20 text-white p-4 w-full">
+                                <h2 class="text-xl font-bold">GIP at Malaysia <span class="text-yellow-500">(4
+                                        Days)</span>,
+                                    Kuala Lumpur, Malaysia</h2>
+                            </div>
+                        </div>
+
+                        <!-- Hidden Accordion Content -->
+                        <div id="accordionContent3" class="p-6 hidden bg-white border rounded-b-lg">
+                            <div class="container mx-auto px-4 py-4">
+                                <h1 class="text-base font-bold text-center mb-4">Hosted by USCI University</h1>
+                                <p class="text-center mb-8 text-gray-700">
+                                    Enhance your educational experience with interactive sessions at USCI University in
+                                    Malaysia. Engage with expert
+                                    faculty, explore state-of-the-art facilities, and participate in hands-on learning
+                                    activities designed to broaden your
+                                    academic horizons and provide real-world insights into various industries.
+                                </p>
+
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <!-- Industry Visits -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4">INDUSTRY VISITS</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Toyota Center Malaysia:</span> Gain
+                                                    valuable insights into automotive excellence at the Toyota Center in
+                                                    Malaysia, where innovation and cutting-edge
+                                                    technology drive the future of transportation.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    <span class="font-semibold">Yakult Malaysia:</span> Discover the
+                                                    science of health and wellness with a visit to Yakult Malaysia,
+                                                    where students will learn about the
+                                                    production of this globally renowned probiotic drink and its
+                                                    benefits.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Excursions -->
+                                    <div class="">
+                                        <h2 class="text-2xl font-semibold text-brand mb-4">EXCURSIONS</h2>
+                                        <ul class="space-y-4">
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Sultan Abdul Samad Building: Explore the historic and
+                                                    architecturally stunning Sultan Abdul Samad Building.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Petronas Twin Towers: Visit the iconic Petronas Twin Towers and
+                                                    enjoy breathtaking views from the sky bridge.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Genting Highlands: Experience the thrill and beauty of Genting
+                                                    Highlands, a vibrant hill resort.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Batu Caves & Chinese Temple: Discover the cultural significance of
+                                                    Batu Caves and the serene beauty of a Chinese temple.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Federal Territory Mosque: Admire the grandeur and architectural
+                                                    elegance of the Federal Territory Mosque.
+                                                </div>
+                                            </li>
+                                            <li class="flex items-start">
+                                                <svg class="w-6 h-6 text-brand mr-2 flex-shrink-0" fill="none"
+                                                    stroke="currentColor" viewBox="0 0 24 24"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                                </svg>
+                                                <div>
+                                                    Berjaya Times Square: Enjoy shopping and entertainment at Berjaya
+                                                    Times Square, one of Malaysia's largest malls.
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="placement" class="flex w-full h-auto bg-[#f8f8f8]">
+                <div
+                    class="flex flex-col max-w-7xl px-5 py-8 md:py-10  gap-5  md:gap-5 lg:gap-7 xl:gap-10 w-full h-full  mx-auto">
+
+                    <div class="flex flex-col w-full  md:items-center md:justify-center">
+                        <h2
+                            class="font-Bebas-Neue flex flex-wrap w-full items-center justify-left sm:justify-center text-xl sm:text-2xl lg:text-[40px]">
+                            WE OFFER 100% PLACEMENT ASSURANCE
+                        </h2>
+                        <p class="flex max-w-5xl text-center pt-5">With over three decades of excellence, ITM Business
+                            School
+                            blends a
+                            rich alumni
+                            network and
+                            deep industry ties to offer
+                            unparalleled placement prospects. Each year, more than 950 companies actively seek talent
+                            from our campus. Students are
+                            consistently placed in some of the top companies.</p>
+                    </div>
+
+                    <div class="">
+                        <div
+                            class="flex card-scroll h-auto items-center justify-between overflow-x-auto overflow-y-hidden w-full">
+                            <div
+                                class="flex h-full gap-5 items-stretch py-3 justify-around lg:grid lg:grid-cols-3 lg:w-fit lg:mx-auto ">
+                                <article
+                                    class="flex flex-col w-80 md:w-96 items-start justify-start shadow-md rounded-2xl">
+                                    <div class="relative w-full">
+                                        <img loading="lazy" src="https://cdn.itm.edu/assets/intership_1_ff44dd7dc5.webp"
+                                            alt=""
+                                            class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10">
+                                        </div>
+                                    </div>
+                                    <div class="max-w-xl w-full px-5 py-5">
+                                        <div class="group relative">
+                                            <h3
+                                                class="font-Bebas-Neue text-2xl leading-6 text-gray-900 group-hover:text-gray-600">
+                                                𝒊Connect or Industry Connect
+                                            </h3>
+                                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                Central to the ITM Business School is 𝒊Connect , or 'Industry Connect'.
+                                                Recognizing that textbook learning alone falls
+                                                short in preparing students for real-world challenges...
+                                            </p>
+                                            <a href="#" class="flex py-4 underline">Know More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article
+                                    class="flex flex-col w-80 md:w-96 items-start justify-start shadow-md rounded-2xl">
+                                    <div class="relative w-full">
+                                        <img loading="lazy"
+                                            src="https://cdn.itm.edu/assets/certification_10fc917635.webp" alt=""
+                                            class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10">
+                                        </div>
+                                    </div>
+                                    <div class="max-w-xl w-full px-5 py-5">
+                                        <div class="group relative">
+                                            <h3
+                                                class="font-Bebas-Neue text-2xl leading-6 text-gray-900 group-hover:text-gray-600">
+                                                Advanced Professional Certifications
+                                            </h3>
+                                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                At ITM Business School, we offer over 35 professional certifications
+                                                across various specializations, giving our students
+                                                valuable, industry-relevant credentials that are...
+                                            </p>
+                                            <a href="#" class="flex py-4 underline">Know More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article
+                                    class="flex flex-col w-80 md:w-96 items-start justify-start shadow-md rounded-2xl">
+                                    <div class="relative w-full">
+                                        <img loading="lazy" src="https://cdn.itm.edu/assets/tailwind_c22765fce9.webp"
+                                            alt=""
+                                            class="aspect-[16/9] w-full rounded-2xl bg-gray-100 object-cover sm:aspect-[2/1] lg:aspect-[3/2]">
+                                        <div class="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10">
+                                        </div>
+                                    </div>
+                                    <div class="max-w-xl w-full px-5 py-5">
+                                        <div class="group relative">
+                                            <h3
+                                                class="font-Bebas-Neue text-2xl leading-6 text-gray-900 group-hover:text-gray-600">
+                                                Personal Professional Development TALEWIND
+                                            </h3>
+                                            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                                                At ITM Business School, we recognise that “knowing” is not enough. It is
+                                                important that students are able to confidently
+                                                showcase their skills...
+                                            </p>
+                                            <a href="#" class="flex py-4 underline">Know More</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cta" class="flex w-full bg-[#a61c55]">
+                <div class="w-full text-center py-20">
+                    <h1 class="font-Bebas-Neue text-white text-3xl md:text-[40px] mb-6">TAKE THE NEXT STEP</h1>
+                    <div class="flex flex-col md:flex-row justify-center gap-4 px-4">
+                        <button
+                            class="bg-orange-400 text-white  py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Enquire Now
+                        </button>
+                        <button
+                            class="bg-orange-400 text-white  py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Schedule Callback
+                        </button>
+                        <button
+                            class="bg-orange-400 text-white  py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+                            type="button">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="bg-[#231f20] text-white py-10">
+                <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-10 px-5">
+                    <div class="md:col-span-4 lg:col-span-5">
+                        <h3 class="font-Bebas-Neue text-2xl font-bold mb-3">ABOUT ITM BUSINESS SCHOOL</h3>
+                        <p class="mb-5">
+                            is a leading Business School based out of Kharghar, Navi Mumbai, India. We are known for our
+                            future-focused
+                            business education, strong industry connect, and rigorous student training.
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+                                    height="25" viewBox="0,0,256,256">
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM37,19h-2c-2.14,0 -3,0.5 -3,2v3h5l-1,5h-4v15h-5v-15h-4v-5h4v-3c0,-4 2,-7 6,-7c2.9,0 4,1 4,1z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+                                    height="25" viewBox="0,0,256,256">
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M11,4c-3.866,0 -7,3.134 -7,7v28c0,3.866 3.134,7 7,7h28c3.866,0 7,-3.134 7,-7v-28c0,-3.866 -3.134,-7 -7,-7zM13.08594,13h7.9375l5.63672,8.00977l6.83984,-8.00977h2.5l-8.21094,9.61328l10.125,14.38672h-7.93555l-6.54102,-9.29297l-7.9375,9.29297h-2.5l9.30859,-10.89648zM16.91306,15l14.10742,20h3.06445l-14.10742,-20z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+                            <a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+                                    height="25" viewBox="0,0,256,256">
+                                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
+                                        stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                        stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <g transform="scale(5.12,5.12)">
+                                            <path
+                                                d="M44.89844,14.5c-0.39844,-2.19922 -2.29687,-3.80078 -4.5,-4.30078c-3.29687,-0.69922 -9.39844,-1.19922 -16,-1.19922c-6.59766,0 -12.79687,0.5 -16.09766,1.19922c-2.19922,0.5 -4.10156,2 -4.5,4.30078c-0.40234,2.5 -0.80078,6 -0.80078,10.5c0,4.5 0.39844,8 0.89844,10.5c0.40234,2.19922 2.30078,3.80078 4.5,4.30078c3.5,0.69922 9.5,1.19922 16.10156,1.19922c6.60156,0 12.60156,-0.5 16.10156,-1.19922c2.19922,-0.5 4.09766,-2 4.5,-4.30078c0.39844,-2.5 0.89844,-6.10156 1,-10.5c-0.20312,-4.5 -0.70312,-8 -1.20312,-10.5zM19,32v-14l12.19922,7z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <!-- Company Section -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <h3 class="font-Bebas-Neue text-2xl font-bold mb-3">COMPANY</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="hover:underline">Home</a></li>
+                            <li><a href="#" class="hover:underline">Ranking</a></li>
+                            <li><a href="#" class="hover:underline">Incubator</a></li>
+                        </ul>
+                    </div>
+                    <!-- Other Links Section -->
+                    <div class="md:col-span-2 lg:col-span-2">
+                        <!-- <h3 class="text-xl font-bold mb-3">COMPANY</h3> -->
+                        <ul class="space-y-3 pt-10">
+                            <li><a href="#" class="hover:underline">Admission</a></li>
+                            <li><a href="#" class="hover:underline">Program</a></li>
+                            <li><a href="#" class="hover:underline">Campus Life</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact Section -->
+                    <div class="md:col-span-2 lg:col-span-3">
+                        <h3 class="font-Bebas-Neue text-2xl font-bold mb-3">CONTACT US</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-center space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+                                </svg>
+                                <span>08047189266</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-4">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21.75 8.25v10.5a2.25 2.25 0 0 1-2.25 2.25H4.5a2.25 2.25 0 0 1-2.25-2.25V8.25m19.5 0L12 13.5 2.25 8.25M19.5 4.5H4.5a2.25 2.25 0 0 0-2.25 2.25v0" />
+                                </svg>
+                                <span>itm@itm.edu</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+
+                                <span>ITM Skills University Plot 25 & 26, Institutional Area, Sector 4, Kharghar, Navi
+                                    Mumbai, Maharashtra 410210</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-t border-gray-700 mt-10 pt-5 text-center text-sm text-gray-500">
+                    <p>Copyright © 2024 ITM Skills University All Rights Reserved</p>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(`accordionContent${id}`);
+            content.classList.toggle('hidden'); // Toggle the visibility of the content
+        }
+    </script>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
