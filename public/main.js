@@ -34,6 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("defaultOpen").click();
 });
 
+
+
+
 var swiperOptions2 = {
     loop: true,
     spaceBetween: 10,
@@ -66,65 +69,40 @@ var swiperOptions2 = {
 
 var swiper = new Swiper(".swiper-container2", swiperOptions2);
 
+var swiperOptions1 = {
+    loop: true,
+    spaceBetween: 10,
+    grabCursor: false,
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+    },
+};
 
-let buttons = document.querySelectorAll(".slider-button");
-let counter = 1;
-let numberOfSlides = document.querySelector(".slider-parent").childElementCount;
-let interval;
+var swiper = new Swiper(".swiper-container1", swiperOptions1);
 
-function back(button) {
-    counter--;
-    if (counter < 1) {
-        counter = numberOfSlides;
-    }
-    button.href = `#slide-${counter}`;
-    updateSlides();
+
+function toggleAccordion(id) {
+    const content = document.getElementById(`accordionContent${id}`);
+    content.classList.toggle('hidden');
 }
-
-function next(button) {
-    counter++;
-    if (counter > numberOfSlides) {
-        counter = 1;
-    }
-    button.href = `#slide-${counter}`;
-    updateSlides();
-}
-
-function updateSlides() {
-    document.querySelectorAll('[data-slide-key]').forEach(slide => {
-        slide.classList.remove('bg-green-600');
-    });
-
-    let currentSlide = document.querySelector(`[data-slide-key="${counter}"]`);
-    if (currentSlide) {
-        currentSlide.classList.add('bg-green-600');
-    }
-}
-
-function startAutoscroll(intervalTime) {
-    interval = setInterval(() => {
-        let nextButton = document.querySelector(".slider-button.next");
-        if (nextButton) {
-            next(nextButton);
-        }
-    }, intervalTime);
-}
-
-function stopAutoscroll() {
-    clearInterval(interval);
-}
-
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-        if (button.classList.contains("next")) {
-            next(button);
-        } else if (button.classList.contains("back")) {
-            back(button);
-        }
-        stopAutoscroll();
-    });
-});
-
-startAutoscroll(3000);
-
-
